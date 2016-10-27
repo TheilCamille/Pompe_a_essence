@@ -48,12 +48,18 @@ $( function() {
                 $( "#log" ).dialog( "close");
                 $( "#finish" ).dialog( "open");
             }
-            if ($("#cb").val() != 1234) {
+            
+            else is (&("#cb").val() == "") {
+                $("#end").hide();
+                alert("aucune valeur détecté, vueillez réessayer.")
+                $("#end").location.reload();
+            }
+                     
+            else ($("#cb").val() != 1234) {
                 $("#end").hide();
                 alert("Le code n'est pas valide, veuillez réessayer.")
                 window.location.reload();
             }
-
         });
 
     });
