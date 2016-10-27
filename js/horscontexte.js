@@ -49,13 +49,14 @@ $( function() {
                 $( "#finish" ).dialog( "open");
             }
             
-            else is (&("#cb").val() == "") {
+            else if ($("#cb").val() == "") {
                 $("#end").hide();
-                alert("aucune valeur détecté, vueillez réessayer.");
+                alert("aucune valeur détecté, veuillez réessayer.");
                 $("#log").dialog("open");
+                $( "#log" ).html("<label>Entrez votre numéro de carte bleue pour déclencher la distribution.<input type='text' id='cb'/></label><input type='button' value='valider' id='end'/>" ).css('color','white');
             }
                      
-            else ($("#cb").val() != 1234) {
+            else if($("#cb").val() != 1234) {
                 $("#end").hide();
                 alert("Le code n'est pas valide, veuillez réessayer.");
                 window.location.reload();
