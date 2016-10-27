@@ -52,7 +52,7 @@ $( function() {
             else is (&("#cb").val() == "") {
                 $("#end").hide();
                 alert("aucune valeur détecté, vueillez réessayer.");
-                $('#log").dialog("open");
+                $("#log").dialog("open");
             }
                      
             else ($("#cb").val() != 1234) {
