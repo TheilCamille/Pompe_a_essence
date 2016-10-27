@@ -57,7 +57,7 @@ $( function() {
                      
             else ($("#cb").val() != 1234) {
                 $("#end").hide();
-                alert("Le code n'est pas valide, veuillez réessayer.")
+                alert("Le code n'est pas valide, veuillez réessayer.");
                 window.location.reload();
             }
         });
